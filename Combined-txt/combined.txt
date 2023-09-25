@@ -1,0 +1,286 @@
+[Ship]
+;Better Zoom for Landings
+setgs "fStarMapInspectCameraDistanceScaleZoomMin:StarMap" 0.235
+setgs "fStarMapInspectCameraDistanceScaleZoomMinMoon:StarMap" 0.235
+setgs "fStarMapInspectCameraDistanceScaleZoomMax:StarMap" 5.0
+
+;Transfer inventory to ship from 2500m, dock from 1500m
+setgs fMaxShipTransferDistance 2500.00
+setgs fSpaceshipMaxDockingDistance 1500.0
+
+[Combat]
+;Increases reload speed slightly
+player.forceav WeapReloadSpeedMult 0.00
+player.modav WeapReloadSpeedMult 0.25
+
+;Forces all enemies to drop their armor set on death
+setgs fEquippedArmorChanceToDrop 1.0
+
+;Increases spawn rate of legendary enemies
+setgs fDiffMultLegendaryChance_VE 1
+setgs fDiffMultLegendaryChance_E 1
+setgs fDiffMultLegendaryChance_N 2
+setgs fDiffMultLegendaryChance_H 3
+setgs fDiffMultLegendaryChance_VH 8
+setgs iSecondsToSleepPerUpdate 4000
+
+[General QOL]
+;Makes people get out of your way faster 
+setgs fBumpReactionIdealMoveDist 2.500000
+setgs fBumpReactionMaxMoveDist 7.250000
+setgs fBumpReactionMinMoveDist 2.000000
+setgs fBumpReactionSmallWaitTimer 0.500000
+
+;Increases player walk speed slightly so you can keep up with NPCs
+player.setav speedmult 125
+
+;Makes lockpicking much easier but not brainless
+setgs uSecurityKeyMinSizeNovice 1
+setgs uSecurityKeyMinSizeNovice 1
+setgs uSecurityKeyMinSizeAverage 1
+setgs uSecurityKeyMinSizeHard 2
+setgs uSecurityKeyMinSizeVeryHard 2
+
+setgs uSecurityKeyMaxSizeNovice 3
+setgs uSecurityKeyMaxSizeAverage 3
+setgs uSecurityKeyMaxSizeHard 4
+setgs uSecurityKeyMaxSizeVeryHard 5
+
+setgs uSecurityMaxKeysNovice 4
+setgs uSecurityMaxKeysAverage 5
+setgs uSecurityMaxKeysHard 7
+setgs uSecurityMaxKeysVeryHard 8
+
+setgs uSecurityMinKeysPerRingNovice 2
+setgs uSecurityMinKeysPerRingAverage 3
+setgs uSecurityMinKeysPerRingHard 2
+setgs uSecurityMinKeysPerRingVeryHard 2
+
+setgs uSecurityMaxKeysPerRingNovice 2
+setgs uSecurityMaxKeysPerRingAverage 3
+setgs uSecurityMaxKeysPerRingHard 3
+setgs uSecurityMaxKeysPerRingVeryHard 3
+
+setgs uSecurityPuzzleShapeCountNovice 1
+setgs uSecurityPuzzleShapeCountAverage 1
+setgs uSecurityPuzzleShapeCountHard 2
+setgs uSecurityPuzzleShapeCountVeryHard 3
+
+[Exploration]
+;Only need to scan 4 animals and 4 plants (of each species) for a full planet scan
+setgs iHandScannerAnimalCountBase 4
+setgs iHandScannerPlantsCountBase 4
+
+;Increased scan distance
+SetGS fHandScannerScanRange 60.0
+SetGS fHandScannerSocialRange 150.0
+
+;Makes scanner scan the whole screen
+setini "fResourceDecalRenderRadiusFalloffPct:ResourceVeins" "10"
+setini "fResourceDecalRenderRadiusPct:ResourceVeins" "10"
+setini "fScanHighlightDotAngle:Interface" "0.2"
+
+;Makes you able to see resource veins from very far away
+setini "fResourceDecalRenderDistance:ResourceVeins" "4000.0"
+setini "fResourceDecalRenderDistanceFalloff:ResourceVeins" "4000.0"
+
+[Just for Fun/ Just Cause]
+;Makes NPCs blink more often during dialogue
+setgs fBlinkDelayMax 6
+setgs fBlinkDelayMin 2
+
+;Makes much more bullet casings remain on the floor for immersion
+setgs fGunShellLifetime 50
+setgs iDebrisMaxCount 200
+setgs fGunShellCameraDistance 200
+
+;Better tooltips when you do something wrong as if they're your thoughts
+setgs snoammo "Ahh fuck, I'm out of ammo!"
+setgs sPlayerDisarmedMessage "Woooow, I really just dropped my weapon."
+setgs sPlayerLeavingBorderRegion "Better call my ship to come pick my ass up."
+setgs sPickpocketFail "These goddamn fat fingers are always getting me caught."
+setgs sPADisallowed "Probably shouldn't do dumb shit like that."
+setgs sOverEncumbered "Fuck man, I got too much shit."
+setgs sOutOfLockpicks "I could've swore I had another Digipick, fuck me man."
+setgs sObstructedCannotActivate "I can't use it cause something is of course, in the fucking way."
+setgs sNoFastTravelOverencumbered "I got too much shit on me to be gettin over there that quick."
+setgs sNoFastTravelHostileActorsNear "Can't travel that quickly, too many assholes around."
+setgs sNoFastTravelCombat "I gotta kill the motherfuckers around here before I can travel that fast."
+setgs sNoFastTravelAlarm "I need to shut off that annoying ass alarm before I can leave that quick."
+setgs sNoEatItem "My dumbass really thought I could eat that."
+setgs sBleedingOutMessage "Fuck, bleeding out, is my dumbass really gonna die like this?"
+setgs sCantEquipBrokenItem "Shit's broken, maybe I can fix it."
+setgs sTeammateOverencumbered "That motherfucker can't carry anymore!"
+setgs sObjectInUse "Can you get the fuck out of the way so I can use this shit, please!"
+setgs sNoWaitWhileAlarm "Fuckin alarms, I can't wait here."
+setgs sNoWaitWarnToLeave "Can't wait here cause that asshole asked me to leave."
+setgs sNoWaitTrespass "Probably not a good idea to wait around while I'm trespassing."
+setgs sNoWaitTakingHealthDamage "I'm getting fucked up, why would I wait here?"
+setgs sNoWaitInCell "I can't wait here for some fuckin reason."
+setgs sNoWaitHostileActorsNear "Gotta kill those assholes before I can wait."
+setgs sNoWaitDefault "I can't wait here for some fuckin reason."
+setgs sNoSleepWhileAlarm "I can't sleep with that annoying ass alarm going off."
+setgs sNoSleepWarnToLeave "That asshole asked me to leave so I cant sleep here."
+setgs sNoSleepTrespass "What kind of dumbass am I, to think sleeping while trespassing was a good idea?"
+setgs sNoSleepInOwnedBed "Some asshole owns this bed so i *apparently* can't sleep in it."
+setgs sNoSleepInCell "I can't fucking sleep here I guess."
+setgs sNoSleepHostileActorsNear "I gotta kill those motherfuckers before i can get some shut eye."
+setgs sNoSleepDefault "WAKE UP, can't sleep right now dipshit."
+setgs sNoPickPocketAgain "My fat ass fingers got me caught up before, I'd be a real dumbass to try again."
+setgs sNoFastTravelDefault "I'm just trying to travel quick but no, i can't."
+setgs sMagicGuideNoPath "My fucking scanner isn't working right, piece of shit can't even find a path."
+setgs sMagicGuideNoMarker "I should focus on what the fuck to do."
+setgs sItemTooHeavy "Holy shit, that was fuckin heavy, too much for me."
+setgs sImpossibleLock "Gotta find that fuckin key, Digipicks are useless."
+setgs sFailedActivation "I guess I gotta wait for that asshole to be done."
+setgs sDropQuestItemWarning "This shit is too important, I should keep it on me."
+setgs sCombatCannotActivate "I can't use this shit while fighting."
+setgs sChemsAddicted "Well fuck, my dumbass became addicted to %s."
+setgs sChemsWornOff "I can't feel the effects of %s anymore, gotta take some more of that shit"
+setgs sSuccessfulSneakAttackMain "I snuck up on that motherfucker and popped em for"
+setgs sSceneBlockingActorActivation "Sumbitch is too busy for me apparently."
+setgs sRemoveCrimeGold "Got that fuckin bounty removed from"
+setgs sRemoveItemFromInventory "has been removed from my inventory, I didnt wanna carry that shit anyways."
+setgs sNoEatQuestItem "This item is too important, why the fuck would I think about eating it?"
+setgs sCriticalStrike "I pulled up and straight smacked"
+setgs sCantUnequipGeneric "I can't get rid of this shit."
+setgs sCantEquipGeneric "I can't equip this shit."
+setgs sAddCrimeGold "I done fucked up & gained a bounty at"
+setgs sNoFastTravelUndiscovered "I gotta check out that fuckin place at least once before i can travel to it all quick like."
+
+
+
+
+[Experience and Leveling]
+;Increases XP for a range of small things to make them more worth doing
+;Speech
+SetGS fSpeechChallengeSuccessXP 100
+ 
+;Cooking
+SetGS fCookingExpMult 0.01
+SetGS fCookingExpBase 1
+SetGS fCookingExpMax 12
+SetGS fCookingExpMin 12
+ 
+;Research
+SetGS fResearchExpMult 2
+SetGS fResearchExpBase 15
+SetGS fResearchExpMax 999
+ 
+ ;Crafting Industial Items
+SetGS fWorkbenchExperienceMult 0.01
+SetGS fWorkbenchExperienceBase 1
+SetGS fWorkbenchExperienceMax 30
+SetGS fWorkbenchExperienceMin 30
+ 
+;Discovering new POIs
+SetGS iXPRewardDiscoverMapMarker 80
+SetGS iXPRewardDiscoverSecretArea 100
+
+;Successfully Lockpicking
+SetGS fLockpickXPRewardEasy 15
+SetGS fLockpickXPRewardAverage 30
+SetGS fLockpickXPRewardHard 45
+SetGS fLockpickXPRewardVeryHard 60
+
+
+
+
+[Vendors / Economy]
+;Makes vendors respawn every 24 hours instead of 48
+setgs iDaysToRespawnVendor 1
+
+;Vendors pay more (Vanilla = 15-18.5%)
+setgs fVendorSellPriceMult 0.20
+
+;Allows you to own 20 spaceships and is cheaper to register stolen ones
+setgs uSpaceshipMaximumOwnedSpaceships 20
+setgs fSpaceshipRegisterValueMult 0.35
+
+
+[Additional QOL features]
+;"Name of the Global" "Vanilla Value"
+
+;---Drink Duration---
+;DrinkDur_Convenience_01_Small 180
+set 2B97F6 to 360
+;DrinkDur_Convenience_02_Medium 300
+set 2B97F7 to 600
+;DrinkDur_Convenience_XPBonus 900
+set 2B97F8 to 1800
+;DrinkDur_HighEnd_01_Small 180
+set 2B97F9 to 360
+;DrinkDur_HighEnd_02_Medium 300
+set 2B97FA to 600
+;DrinkDur_HighEnd_03_Large 600
+set 2B97FB to 1200
+;DrinkDur_HighEnd_ReloadSpeed 60
+set 2B97FC to 120
+;DrinkDur_HighEnd_XPBonus_01_Small 900
+set 2B97FD to 1800
+;DrinkDur_HighEnd_XPBonus_02_Medium 1800
+set 2B97FE to 3600
+;DrinkDur_SlowTime 10
+set 2B97FF to 20
+
+;---Food Duration---
+;FoodDur_Conv_01_Short 300
+set 2B981A to 600
+;FoodDur_HighEnd_01_Short 300
+set 2B981B to 600
+;FoodDur_HighEnd_02_Medium 480
+set 2B981C to 960
+;FoodDur_HighEnd_03_Long 600
+set 2B981D to 1200
+;FoodDur_HighEnd_04_XLong 720
+set 2B981E to 1440
+;FoodDur_HighEnd_XPBonus_01_Small 1800
+set 2B981F to 3600
+;FoodDur_HighEnd_XPBonus_02_Medium 3600
+set 2B9820 to 7200
+;FoodDur_HighEnd_XPBonus_03_Large 7200
+set 2B9821 to 14400
+;FoodDur_Raw_01_Short 180
+set 2B9822 to 360
+
+;---Food Healing---
+;FoodMag_Value_RestoreHealth_Convenience_01_Small 3
+set 2B9826 to 15
+;FoodMag_Value_RestoreHealth_Convenience_02_Medium 5
+set 2B9827 to 25
+;FoodMag_Value_RestoreHealth_Convenience_03_Large 10
+set 2B9828 to 50
+;FoodMag_Value_RestoreHealth_HighEnd_01_VerySmall 2
+set 2B9830 to 10
+;FoodMag_Value_RestoreHealth_HighEnd_02_Small 3
+set 2B9831 to 15
+;FoodMag_Value_RestoreHealth_HighEnd_02_SmallMedium 4
+set 2CE5DD to 20
+;FoodMag_Value_RestoreHealth_HighEnd_03_Medium 5
+set 2B9832 to 25
+;FoodMag_Value_RestoreHealth_HighEnd_04_Large 10
+set 2B9833 to 50
+;FoodMag_Value_RestoreHealth_HighEnd_05_XLarge 15
+set 2B9834 to 75
+;FoodMag_Value_RestoreHealth_HighEnd_06_Huge 20
+set 2B9835 to 100
+;FoodMag_Value_RestoreHealth_HighEnd_07_XHuge 25
+set 2B9836 to 125
+;FoodMag_Value_RestoreHealth_Raw_01_Small 2
+set 2B9837 to 10
+;FoodMag_Value_RestoreHealth_Raw_02_Medium 3
+set 2B9838 to 15
+
+;---Chem Duration---
+;ChemDur_Standard_01 60
+set 2D3975 to 120
+;ChemDur_Standard_02 120
+set 2D3976 to 240
+;ChemDur_Standard_03 180
+set 2D3977 to 360
+;ChemDur_Standard_04 300
+set 2D3978 to 600
+;ChemDur_Standard_05 600
+set 2D3979 to 1200
+;ChemDur_Standard_06 900
+set 2D3984 to 1800
