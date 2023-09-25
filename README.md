@@ -42,7 +42,7 @@ This list is not exhaustive, as there are too many tweaks to fit, but this cover
     * Makes the fade-in/out transitions much faster, including loading saves, fast travelling, and opening doors. 
 -	### **And much more...**
 
-## [Combined.txt](/blob/main/Combined-txt/README.MD) (Tweaks) 
+## [Combined.txt](/Combined-txt/README.MD) (Tweaks) 
 ### Ship Stuff
 
 * Increased zoom for landings on planets (not moons)
