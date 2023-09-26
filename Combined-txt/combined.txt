@@ -1,4 +1,4 @@
-[Ship]
+;[Ship]
 ;Better Zoom for Landings
 setgs "fStarMapInspectCameraDistanceScaleZoomMin:StarMap" 0.235
 setgs "fStarMapInspectCameraDistanceScaleZoomMinMoon:StarMap" 0.235
@@ -8,7 +8,7 @@ setgs "fStarMapInspectCameraDistanceScaleZoomMax:StarMap" 5.0
 setgs fMaxShipTransferDistance 2500.00
 setgs fSpaceshipMaxDockingDistance 1500.0
 
-[Combat]
+;[Combat]
 ;Increases reload speed slightly
 player.forceav WeapReloadSpeedMult 0.00
 player.modav WeapReloadSpeedMult 0.25
@@ -24,7 +24,7 @@ setgs fDiffMultLegendaryChance_H 3
 setgs fDiffMultLegendaryChance_VH 8
 setgs iSecondsToSleepPerUpdate 4000
 
-[General QOL]
+;[General QOL]
 ;Makes people get out of your way faster 
 setgs fBumpReactionIdealMoveDist 2.500000
 setgs fBumpReactionMaxMoveDist 7.250000
@@ -66,14 +66,15 @@ setgs uSecurityPuzzleShapeCountAverage 1
 setgs uSecurityPuzzleShapeCountHard 2
 setgs uSecurityPuzzleShapeCountVeryHard 3
 
-[Exploration]
+;[Exploration]
 ;Only need to scan 4 animals and 4 plants (of each species) for a full planet scan
 setgs iHandScannerAnimalCountBase 4
 setgs iHandScannerPlantsCountBase 4
 
 ;Increased scan distance
-SetGS fHandScannerScanRange 60.0
-SetGS fHandScannerSocialRange 150.0
+setgs fHandScannerScanRange 60.0
+setgs fHandScannerSocialRange 150.0
+setgs fHandScannerScanRangeSkillMult 15
 
 ;Makes scanner scan the whole screen
 setini "fResourceDecalRenderRadiusFalloffPct:ResourceVeins" "10"
@@ -84,7 +85,7 @@ setini "fScanHighlightDotAngle:Interface" "0.2"
 setini "fResourceDecalRenderDistance:ResourceVeins" "4000.0"
 setini "fResourceDecalRenderDistanceFalloff:ResourceVeins" "4000.0"
 
-[Just for Fun/ Just Cause]
+;[Just for Fun/ Just Cause]
 ;Makes NPCs blink more often during dialogue
 setgs fBlinkDelayMax 6
 setgs fBlinkDelayMin 2
@@ -151,7 +152,7 @@ setgs sNoFastTravelUndiscovered "I gotta check out that fuckin place at least on
 
 
 
-[Experience and Leveling]
+;[Experience and Leveling]
 ;Increases XP for a range of small things to make them more worth doing
 ;Speech
 SetGS fSpeechChallengeSuccessXP 100
@@ -186,7 +187,7 @@ SetGS fLockpickXPRewardVeryHard 60
 
 
 
-[Vendors / Economy]
+;[Vendors / Economy]
 ;Makes vendors respawn every 24 hours instead of 48
 setgs iDaysToRespawnVendor 1
 
@@ -198,7 +199,7 @@ setgs uSpaceshipMaximumOwnedSpaceships 20
 setgs fSpaceshipRegisterValueMult 0.35
 
 
-[Additional QOL features]
+;[Additional QOL features]
 ;"Name of the Global" "Vanilla Value"
 
 ;---Drink Duration---
