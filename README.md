@@ -15,6 +15,7 @@ v0.1 - 9-24-2023 - Created the repo, designed outlines.
 ### To Do:
 
 - [ ] Write the README for my custom Hotkeys
+- [ ] Finish the curated Modlist
 
 ## Overview
 
