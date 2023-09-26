@@ -15,6 +15,7 @@ v0.1 - 9-24-2023 - Created the repo, designed outlines.
 ### To Do:
 
 - [ ] Write the README for my custom Hotkeys
+- [ ] Finish the curated Modlist
 
 ## Overview
 
@@ -113,15 +114,15 @@ This list is not exhaustive, as there are too many tweaks to fit, but this cover
 * Cheaper to register stolen ships
 
 # ↓↓↓ Modlist Located Below Detailed Installation Instructions ↓↓↓ 
-    > [!IMPORTANT]
-## ***!!!READ/DO THIS FIRST BEFORE MODIFYING ANYTHING!!!*** > [!IMPORTANT]
-    > [!IMPORTANT]  
- 
-The first thing anyone who wants to mod Starfield must do is run the [Modfix by Crypton](https://www.nexusmods.com/starfield/mods/1367). You must do this before you start installing mods or tweaks or anything you install _will_ get ruined and you have to start all over.  
+    
+## ***!!!READ/DO THIS FIRST BEFORE MODIFYING ANYTHING!!!***
+## The first thing anyone who wants to mod Starfield must do is run the [Modfix by Crypton](https://www.nexusmods.com/starfield/mods/1367). You must do this before you start installing mods or tweaks or anything you install _will_ get ruined and you have to start all over.
+
   
 ### _Background on Why it's Needed:_   
-       When Starfield gets installed, for some reason it creates TWO “\Data\” folders, one in “My Documents\My Games\Starfield\”, and one in the install directory. These two Data folders conflict with each other and mess up any mods you try to install. The reason for this is that any in-game picture you take gets saved to a folder within the My Documents Data folder, and consequently, if there are any files within the that version of the Data folder, the game completely ignores the install directory Data folder, which is where the UI, Visual, Audio, etc. mods need to go.]
 
+When Starfield gets installed, for some reason it creates TWO “\Data\” folders, one in “My Documents\My Games\Starfield\”, and one in the install directory. These two Data folders conflict with each other and mess up any mods you try to install. The reason for this is that any in-game picture you take gets saved to a folder within the My Documents Data folder, and consequently, if there are any files within the that version of the Data folder, the game completely ignores the install directory Data folder, which is where the UI, Visual, Audio, etc. mods need to go.
+       
 This fix primarily creates a “directory junction” or “symlink” (effectively the same thing) between the Data folder inside the install directory and the one in the My Documents directory. Additionally, it changes the folder that in-game photos are saved to prevent them from breaking the mods (instead of saving them in the My Documents Data folder, they are saved in a new folder called Photos that is completely separate). This ensures that mods do not break, so it is crucially important.
 
 
