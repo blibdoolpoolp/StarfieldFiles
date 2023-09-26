@@ -83,9 +83,8 @@ This list is not exhaustive, as there are too many tweaks to fit, but this cover
 ### Planet Exploration
 
 * Only need to scan 4 animals and 4 plants (of each species) for a full planet scan
-* Increased scan distance  
-* Removes the annoying scanning HUD (the big circle thingy, reticle still visible)
-* Makes scanner scan the whole screen instead of just inside the circle
+* Increased scan distance
+* Makes scanner scan the whole screen
 * Makes you able to see resource veins from very far away
 
 
@@ -145,7 +144,7 @@ Aside from that, everything should be equivalent. So just keep in mind, when I r
 
 THE ONLY TIME YOU WILL USE the "My Documents\My Games\Starfield\" folder is when you first copy the StarfieldCustom.ini into it, or if you ever return to edit StarfieldCustom.ini. NO mods should be installed here, all of them should be put into the root game folder OR one of it's subfolders (such as Data) as indicated by the mod. 
 
-### <u>Main Files and Where they Go</u>
+### <u>File Structure</u>
 
 **`StarfieldCustom.ini:`** This file is the one that you will insert into the "My Documents\My Games\Starfield\" folder, it contains your “overrides” to the default Starfield.ini located inside the installation folder, as well as calls upon the combined.txt tweaks file to start each time the game is launched.  
 
@@ -181,7 +180,7 @@ A WORD OF CAUTION: If you add new mods on top of my collection, there is a (low)
 
 HOWEVER, none of the tweaks or mods in my collection or this repo will permanently alter the game and can all be removed or reversed if wanted or needed, though I highly recommend taking backups of your saves, your StarfieldCustom.ini file, etc. before you make any significant changes.
 
-StarfieldCustom.ini is NOT created automatically. The StarfieldCustom-ini folder in this repo holds both of the following, your choice…
+StarfieldCustom.ini is NOT created automatically. I will provide both of the following, your choice…
 
 1.	My personal StarfieldCustom.ini that has all of my tweaks incorporated into it, with comments above each command or group of commands explaining what they do. You can either use it as is or look it over and remove the tweaks you don't want.
 
@@ -190,27 +189,19 @@ StarfieldCustom.ini is NOT created automatically. The StarfieldCustom-ini folder
 2.	A mostly empty StarfieldCustom.ini template that has only been altered to enable modding, but no mods or tweaks applied.
 
 
-### Directory Structure
+### Root Folder & It’s Subfolders
 
-#### <u>Root Folder:</u> As discussed previously, the “Root” folder of your game install directory is where you place most mods, either in this folders itself, or one of it's subfolders. I will explain now what types of mods go where inside of this directory. 
+Root Folder: As discussed previously, the “Root” folder of your game install directory is where you place most mods. I will explain now what types of mods go where inside of this directory. 
 
-`GamePass “Root” Directory` Located in: “\<GamePass Install Directory>\Starfield\Content\”  
-`Steam “Root” Directory` Located in: “\<Path to Steam>\Steam\steamapps\common\Starfield\”
-
-**Root Subfolders & Directories - (For mods editing the UI, Textures, Audio, etc.)** 
-
-* Within the Data folder inside root, there are multiple other folders that correspond to different types of mods, including:
-    * an Interface folder (UI mods), where mods adjusting the inventory screens, HUD, etc. go
-    * Textures folder, for reskins of items, characters, weapons, armors, etc.
-    * Sounds folder for… sound replacements.. 
-    
- You get the idea. Usually though, the mod provides you with a Data folder inside of the mod’s zip folder that you just drag into the root folder, and it will automatically merge with the existing Data folder and put all of the contained files in the right place.
-
-Text (.txt) files: These files contain batch commands, the main one being “combined.txt” which houses the bulk of our commands in one convenient file. Additionally, if you have some other script/text files you want assigned to a hotkey (using the Starfield Hotkeys mod), or even one you only plan on using temporarily, you should place those in the root folder as well. These files should be placed in the root directory itself, with the Starfield.exe file. 
+`GamePass “Root” Directory` Located in: “<GamePass Install Directory>\ Starfield\Content\”
+`Steam “Root” Directory` Located in: “<Path to Steam>\Steam\steamapps\common\Starfield\”
 
 
+Text (.txt) files: These files contain batch commands, the main one being “combined.txt” which houses the bulk of our commands in one convenient file. Additionally, if you have some other script/text files you want assigned to a hotkey (using the Starfield Hotkeys mod), or if you only need to use it once or occasionally, not every startup of the game, you could place those in the root folder as well. These files should be placed in the root directory itself, with the Starfield.exe file. 
 
-<u>Directory – Hotkeys:</u> This folder will be automatically created in the root folder, alongside the Data folder and Starfield.exe, when you run the Starfield Hotkeys mod by registrator2000. This folder houses the Hotkeys.ini file which is where you can add keybinds for a large amount of in-game actions or console commands. Additionally, you can use it to create “Macros” (or aliases) for other console commands if you so desire. Such as “gimme=player.additem f 10000”, where every time you type gimme into the console, the player.additem f 10000 console command is used much more simply.
+Directories - UI, Textures, Audio, etc.: Within the Data folder inside root, there are multiple other folders that correspond to different types of mods, including an Interface folder (UI mods), Textures for reskins of items, sounds for… sound replacements.. You get the idea. Usually though, the mod provides you with a Data folder inside of the mod’s zip folder that you just drag into the root folder, and it will automatically merge with the existing Data folder and put all of the contained files in the right place.
+
+Directory – Hotkeys: This folder will be automatically created in the root folder, alongside Data and Starfield.exe, when you run the Starfield Hotkeys mod by registrator2000. This folder houses the Hotkeys.ini file which is where you can add keybinds for a large amount of in-game actions or console commands. Additionally, you can use it to create “Macros” (or aliases) for other console commands if you so desire. Such as “gimme=player.additem f 10000”, where every time you type gimme into the console, the player.additem f 10000 console command is used much more simply.
 
 NOTE: The file that creates the Hotkeys folder and sets up the initial Hotkeys.ini file also creates a symlinked version of the Hotkeys folder into the “\My Documents\My Games\Starfield\” folder so the StarfieldCustom.ini can reference it, so do not be alarmed when you see the “second” folder, it’s just a symlinked copy.  
 
@@ -224,12 +215,12 @@ NOTE: The file that creates the Hotkeys folder and sets up the initial Hotkeys.i
 *  **One of the Achievement Enablers**
     * **GamePass users:** Install the [Achievement Enabler by Priqrade](https://www.nexusmods.com/starfield/mods/252) - This mod does exactly what it says, enables achievements even while you are using mods. 
         * `Installation` Create a folder in the root game install folder called Plugins if you don't have it. Download the .asi file from the Nexus link. Place it into the Plugins folder. Then, follow [this link](https://github.com/ThirteenAG/Ultimate-ASI-Loader) and download their copy of "bink2w64.dll". Rename the <i>real</i> "bink2w64.dll" from your root game install folder to "bink2w64Hooked.dll", and then paste in the new "bink2w64.dll" you just downloaded into the same folder. In the end, you will have one file named "bink2w64Hooked.dll", the original .dll that has been renamed, and "bink2w64.dll", the new .dll that loads the .asi file we placed into plugins. All should work great now. (If you don't have "bink2w64.dll", then follow the instructions on the mod page for dinput8.dll, but I have not heard of a single person mentioning they had that file.
-    * **Steam users:** Install either the one above (it works with Steam, but Steam's version doesn't work with GamePass) or [Baka Achievement Enabler](https://www.nexusmods.com/starfield/mods/658). For this one you will need SFSE which is only available for the Steam version so I cannot help you there.
+   * **Steam users:** Install either the one above (it works with Steam, but Steam's version doesn't work with GamePass) or [Baka Achievement Enabler](https://www.nexusmods.com/starfield/mods/658). For this one you will need SFSE which is only available for the Steam version so I cannot help you there.
         * `Installation` Download SFSE according to the instructions on the Mod page and then use it. 
         
 ## Essential Mods - Ones that I cannot _imagine_ playing without
 
-* [Starfield Hotkeys by registrator2000](https://www.nexusmods.com/starfield/mods/1578) - This mod extends the functionality of console commands massively, allowing you to assign in-game functions and/or console commands to keyboard buttons, as well as write "Macros" (AKA aliases) for commands. I am going to include my Hotkeys.ini file which includes hotkeys for managing your ship power, changing your speed, toggle your HUD with a simple button press, etc. You can even do things like create complex macros, then use that macro in a script, then bind that script to a hotkey, for the ultimate ease of use. The possibilities are endless. 
+* [Starfield Hotkeys by registrator2000](https://www.nexusmods.com/starfield/mods/1578) - This mod extends the functionality of console commands massively, allowing you to assign in-game functions and/or console commands to keyboard buttons, as well as write "Macros" (AKA aliases) for commands. I am going to include my Hotkeys.ini file which includes hotkeys for managing your ship power, setting your movement speed to 400% for when you need to run 2,000 meters to the nearest POI and a corresponding hotkey for setting it back to normal once you are close. The possibilities are endless. 
     * `Installation` Download the files, and run the enable_hotkeys.cmd. This adds the needed lines to StarfieldCustom.ini if they aren't there, creates a symlinked Hotkeys folder in both the My Documents - Starfield directory (so StarfieldCustom.ini can access it) and your game install folder, and copies the Hotkeys.ini file into that new folder. You can configure your hotkeys directly in the ini file (my preferred option), or you can do it directly through the in-game console.
     * [See my Hotkeys folder for my custom built hotkeys](/Hotkeys), credit to [Braneth](https://www.nexusmods.com/users/37941390) and [stavanzer](https://www.nexusmods.com/users/7341897) for coming up with the general format for the ship power hotkeys that I tweaked. Read the README within my Hotkeys folder for a rundown. 
 
@@ -245,19 +236,17 @@ NOTE: The file that creates the Hotkeys folder and sets up the initial Hotkeys.i
     
     * To enable it, you simply download the mod folder, copy-and-paste the "JetpackOverhaul.txt" into your root game install folder (same folder as combined.txt, they're both the same type of bat file, however we want combined.txt to run every time we start the game so we include it in the StarfieldCustom.ini, whereas this one just needs to be run once manually). Load into your game and press the ~ button to pull up the console. Then type in "bat JetpackOverhaul" and hit enter (no quotes). The bat will do it's thing and you're good. 
     
-* [Smooth Ship Reticle (NOT FULL UI OVERHAUL) by alexbulluk](https://www.nexusmods.com/starfield/mods/270) - This mod takes the super choppy vanila starship reticle and makes it smooth as butter. The Full UI overhaul is not compatible with StarUI, and StarUI makes the inventory smooth already, but it doesn't touch the starship reticle/HUD. 
+* [Smooth Ship Reticle (NOT FULL UI OVERHAUL) by alexbulluk](https://www.nexusmods.com/starfield/mods/270) - This mod takes the super choppy vanila starship reticle and makes it smooth as butter. The Full UI overhaul is not compatible with StarUI, or at least not with some advanced tweaking, and StarUI makes the inventory smooth already, but it doesn't touch the starship reticle/HUD, which this fixes.
+
+
+
+
 
 
 ## Great Mods - Personal preference if you want to use them or not, they don't make or break the game but they do enhance the experience
 
 * [Scanner Boost by oogabooga66](https://www.nexusmods.com/starfield/mods/829) - I already have increased the scanner range in my combined.txt file to 60m, but this mod implements it even better I believe in certain ways. There are multiple variants, where they not only boost your base range, but also increase the range of the Scanner upgrades, making it much more worthwhile to put points into Scanning. They have a balanced Variant which only increases the base range by an extra 10m (to 20m base), and each upgrade gives you 5m more than the vanilla upgrades (15m per level), and also a much more generous version starting at 100m and increasing by 25m per level. Pick your poison, or just use what I already have in my combined.txt file. I'm too used to the 60m to go back down to 20m, but I feel 100m is too much for me, so I'm torn. I guess this gives you three options!
     * `Installation` Go with my presets already included in combined.txt, or download the version of your choice, and all you need to do is open the Scan.txt file and paste the lines into your combined.txt (ignore the StarfieldCustom.ini included with the mod). If you're using my combined.txt then you should find the section where I adjust the scanner settings and paste your desired settings over them (located under the [Exploration] tag).
-    
-* [Starfield Display Revamp by ClearanceClarence](https://www.nexusmods.com/starfield/mods/1085) - Ever tried to look at the computer terminals, battle stations, or other screens and were disappointed with how blurry they are? Want to be able to actually see and read what's on them? Look no farther, this mod completely enhances many screens in game to make them look legit and readable.
-
-* [HQ - Digipick and Credit Stick](https://www.nexusmods.com/starfield/mods/2345?tab=description) - This enhances the visuals of digipicks and credit sticks so they are more easily visible among the countless junk objects they are often found siting with, and also look much more high quality. 
-
-
     
     
 # Changelog
