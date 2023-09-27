@@ -2,14 +2,17 @@
 ##  (Fully GamePass & Steam Compatible)
 ## Changelog
 
+V0.51 - 9-26-2023  
+    - Added more mods to the modlist.
+    - Tweaked README.
 
 V0.5 - 9-25-2023 
-  - Finished the folder structure for my StarfieldCustom.ini and combined.txt.  
-                 - Created README.MDs for each of those files.  
-                 - Added in the Hotkeys folder with my custom Hotkeys.ini file.  
-                 - Wrote the main README.MD for the repo, including features of my CS.ini and combined.txt.  
-                 - Added detailed informational sections about the file structure and functions of the main files we use for modding.  
-                 - Started the Modlist section, got through the Critical section and made progress on the Essential & Great section.   
+    - Finished the folder structure for my StarfieldCustom.ini and combined.txt.  
+    - Created README.MDs for each of those files.  
+    - Added in the Hotkeys folder with my custom Hotkeys.ini file.  
+    - Wrote the main README.MD for the repo, including features of my CS.ini and combined.txt.  
+    - Added detailed informational sections about the file structure and functions of the main files we use for modding.  
+    - Started the Modlist section, got through the Critical section and made progress on the Essential & Great section.   
 
 v0.1 - 9-24-2023 - Created the repo, designed outlines.
 ### To Do:
@@ -260,24 +263,6 @@ NOTE: The file that creates the Hotkeys folder and sets up the initial Hotkeys.i
 
 
     
-    
-# Changelog
-
-
-V0.5 - 9-25-2023 - Finished the folder structure for my StarfieldCustom.ini and combined.txt.
-                 - Created README.MDs for each of those files.
-                 - Added in the Hotkeys folder with my custom Hotkeys.ini file.
-                 - Wrote the main README.MD for the repo, including features of my CS.ini and combined.txt.
-                 - Added detailed informational sections about the file structure and functions of the main files we use for modding.
-                 - Started the Modlist section, got through the Critical section and made progress on the Essential & Great section. 
-
-v0.1 - 9-24-2023 - Created the repo, designed outlines.
-
-
-
-
-
-
 
 
 
