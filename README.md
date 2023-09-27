@@ -116,7 +116,7 @@ This list is not exhaustive, as there are too many tweaks to fit, but this cover
 # ↓↓↓ Modlist Located Below Detailed Installation Instructions ↓↓↓ 
     
 ## ***!!!READ/DO THIS FIRST BEFORE MODIFYING ANYTHING!!!***
-## The first thing anyone who wants to mod Starfield must do is run the [Modfix by Crypton](https://www.nexusmods.com/starfield/mods/1367). You must do this before you start installing mods or tweaks or anything you install _will_ get ruined and you have to start all over.
+## The first thing anyone who wants to mod Starfield must do is run the [Modfix by Crypton](https://www.nexusmods.com/starfield/mods/1367). You must do this before you start installing mods or tweaks or any mods you install _will_ get disabled.
 
   
 ### _Background on Why it's Needed:_   
